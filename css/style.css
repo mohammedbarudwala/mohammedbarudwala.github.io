@@ -1,141 +1,187 @@
-@import 'utilities.css';
+@import "utilities.css";
 
-:root{
-    --primary:#3DCFD3;
-     --dark:#161616;
-     --pure:#FFFFFF;
-     --ternary:#898989;
-     --light:#F2F2F2;
-    --darkblue:#00004d;
-
+:root {
+  --primary: #3dcfd3;
+  --dark: #161616;
+  --pure: #ffffff;
+  --ternary: #898989;
+  --light: #f2f2f2;
+  --darkblue: #00004d;
 }
 
-body{
-    font-family: 'poppins',sans-serif;
+body {
+  font-family: "poppins", sans-serif;
 }
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    -webkit-font-smotthing:antialised;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smotthing: antialised;
 }
 
-header{
-    background-color: var(--dark);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 90%, 0 100%);
+header {
+  background-color: var(--dark);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 90%, 0 100%);
 }
 
-.container{
-    max-width: 1152px;
-    padding: 0 15px;
-    margin: 0 auto;
+.container {
+  max-width: 1152px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
-header nav .left a{
-    color: var(--pure);
-    text-decoration: none;
-    margin-right: 2rem;
-    text-transform: uppercase;
-    transition: all .3s ease;
-
+header nav .left a {
+  color: var(--pure);
+  text-decoration: none;
+  margin-right: 2rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
 }
 
-header nav .left a:hover{
-    color: var(--primary);
+header nav .left a:hover {
+  color: var(--primary);
 }
 
-header nav{
-    padding: 2rem 0;
+header nav {
+  padding: 2rem 0;
 }
 
-header nav .branding{
-    margin-right: 3rem;
+header nav .branding {
+  margin-right: 3rem;
 }
 
-.hero{
-    padding: 3rem 0;
+.hero {
+  padding: 3rem 0;
 }
-.hero .left img{
-    width: 400px;
+.hero .left img {
+  width: 400px;
 }
 
 .hero .right {
-    color: var(--pure);
+  color: var(--pure);
 }
 
-.hero .right h6{
-    font-size: 1.6rem;
-    color: var(--primary);
-    margin-bottom: 0.5rem;
+.hero .right h6 {
+  font-size: 1.6rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
 }
 
-
-.hero .right h1{
-    font-size: 4rem;
-    font-weight: 100;
-    line-height: 1.2;
-    margin-bottom: 2rem;
-
+.hero .right h1 {
+  font-size: 4rem;
+  font-weight: 100;
+  line-height: 1.2;
+  margin-bottom: 2rem;
 }
 
-.hero .right h1 span{
-    color: var(--primary);
+.hero .right h1 span {
+  color: var(--primary);
 }
 
-.hero .right p{
-    line-height: 1.9;
-    margin-bottom: 2rem;
+.hero .right p {
+  line-height: 1.9;
+  margin-bottom: 2rem;
 }
 
-.hero .right{
-    margin-top: -5rem;
+.hero .right {
+  margin-top: -5rem;
 }
 
-section{
-    padding: 6rem 0;
+section {
+  padding: 6rem 0;
 }
-
-section .about .about-me-img{
-    height: 450px;
+/* 
+section > .about > .about-me-img {
+  height: 450px;
+  margin: 100px;
+} */
+.about-me-img {
+  height: 500px;
+  width: 350px;
+  margin-right: 200px;
 }
-
-section.about h1{
-    margin-bottom: 1rem;
-    font-size: 1.6rem;
-    font-weight: 400;
-
+.profile-image {
+  margin-right: 200px;
+}
+section.about h1 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 
 section .about h1 span {
-    color: #3DCFD3;
+  color: #3dcfd3;
 }
 
-section .about h3{
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    font-weight: 400;
-
+section .about h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
 }
 
-section .about p{
-    font-family: 'Lato', sans-serif
-    color:var(--ternary);
-    line-hieght: 1.9rem;
+section .about p {
+  font-family: "Lato", sans-serif;
+  color: var(--ternary);
+  /* line-hieght: 1.9rem; */
 }
 
-section .about .social{
-    display: flex;
+section .about .social {
+  display: flex;
+}
+section .about .social a {
+  background: var(--dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 0.6rem;
+}
+/* 
+.student {
+  text-align: center;
+  background-color: var(--dark);
+  margin-bottom: 100px;
+}
+.center {
+  border: 3px solid green;
+  padding: 10px;
+  text-align: center;
+  border: 3px solid green;
+  color: white;
+  background-color: var(--dark);
+} */
+.social_icons {
+  height: 35px;
+  width: 35px;
+}
+
+footer {
+  color: white;
+  background-color: var(--dark);
+  text-align: center;
+  padding: 50px;
+  font-size: 1.5em;
+  width: 100%;
+  position: absolute;
+  height: 150px; /* Height of the footer */
+}
+
+section {
+  background: lemonchiffon;
+}
+
+section .achievements .head1 {
+text-align: center;
+font-size: 4.5rem;
+font-family: initial;
+color: mediumblue;
+}
+
+section .achievements .certificate {
+  align-content: center;
+image-resolution: 400px;
 
 }
-section .about .social a{
-background: var(--dark);
-display: flex;
-align-items: center;
-justify-content: center;
-width: 35px;
-height: 35px;
-border-radius: 50%;
-margin-right: 0.6rem;
-}
-
